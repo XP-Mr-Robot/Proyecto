@@ -1,0 +1,14 @@
+body{
+    background-color: steelblue;
+}
+.titulo{
+    font-family: 'Kosugi Maru', sans-serif;
+    color: azure;
+    font-size: 90px;
+    text-align: center;
+}
+.contenedor{
+    width: 50%;
+    padding-left: 350px;
+    padding-top: 50px;
+}
