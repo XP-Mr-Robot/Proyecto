@@ -1,22 +1,24 @@
-body{
+body {
     background-color: #f9be27;
 }
-.titulo{
+
+.titulo {
     font-family: 'Kosugi Maru', sans-serif;
     color: steelblue;
     font-size: 90px;
     text-align: center;
 }
-.contenedor{
+
+.contenedor {
     padding: 5% 20% 0% 20%;
     box-sizing: border-box;
 }
 
-.logo{
+.logo {
     font-family: 'Kosugi Maru', sans-serif;
     padding-left: 3%;
-height: 100px;
-position: absolute;
-left: 0px;
-color: #f4d942;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    color: #f4d942;
 }
