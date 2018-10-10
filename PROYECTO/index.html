@@ -5,33 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>COSMOS</title>  
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <img src="img/logo.png" class="logo" alt="" srcset="">
+        <ul class="nav">
+            <span class="uanl">UANL</span>
+            <li><a href="#"">Iniciar sesion</a></li>
+            <li><a href="#">Registrarse</a></li>
+        </ul>
     </header>
-    <div class="contenedor">
+    <main class="contenedor">
 
-        <h1 class="titulo">Cosmos</h1>
+        <div class="titulo">
+            Cosmos
 
-        <script>
-            (function () {
-                var cx = '006408768879381756470:lyztadtkx70';
-                var gcse = document.createElement('script');
-                gcse.type = 'text/javascript';
-                gcse.async = true;
-                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(gcse, s);
-            })();
-        </script>
-        <gcse:search></gcse:search>
-    </div>
+        </div>
+        <div class="google">
+
+            <gcse:search class="google"></gcse:search>
+        </div>
+
+    </main>
+
+    <!-- Script de Google Custom Search -->
+    <script>
+        (function () {
+            var cx = '006408768879381756470:lyztadtkx70';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
 </body>
 
 </html>

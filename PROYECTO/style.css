@@ -1,24 +1,70 @@
-body {
-    background-color: #f9be27;
-}
-
-.titulo {
-    font-family: 'Kosugi Maru', sans-serif;
-    color: steelblue;
-    font-size: 90px;
-    text-align: center;
-}
-
-.contenedor {
-    padding: 5% 20% 0% 20%;
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
-.logo {
-    font-family: 'Kosugi Maru', sans-serif;
-    padding-left: 3%;
-    height: 100px;
-    position: absolute;
-    left: 0px;
-    color: #f4d942;
+:root{
+    --header-height:4em;
+}
+body {
+}
+
+.titulo {
+    font-family: 'Righteous', cursive;
+    color: #61A8E3;;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 90px;
+    text-align: center;
+    margin-right: 37%;
+    margin-left: 37%;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.contenedor {}
+.uanl{
+    float: left; 
+padding-top: 0;
+padding-left: 15px;
+font-family: 'Righteous', cursive;
+color: white;
+font-size: 60px;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #61A8E3;
+    height: 200px;
+    height: var(--header-height);
+}
+
+.nav li{
+    float: right;
+}
+
+.nav li a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+    margin-top: 5px;
+}
+header {
+    background-color: white;
+}
+
+.google {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
