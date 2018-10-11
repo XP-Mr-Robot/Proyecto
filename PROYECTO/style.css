@@ -4,15 +4,19 @@
     box-sizing: border-box;
 }
 
-:root{
-    --header-height:4em;
+:root {
+    --header-height: 4em;
+    --color-blue: #61A8E3;
 }
+
 body {
+    background-image: url(img/34.\ Mauve.png);
+    background-size: cover;
 }
 
 .titulo {
     font-family: 'Righteous', cursive;
-    color: #61A8E3;;
+    color: var(--color-blue);
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 90px;
@@ -21,43 +25,82 @@ body {
     margin-left: 37%;
     border-radius: 30px;
     background-color: white;
+    animation: beat 1s infinite alternate ease-in-out;
 }
 
-.contenedor {}
-.uanl{
-    float: left; 
-padding-top: 0;
-padding-left: 15px;
-font-family: 'Righteous', cursive;
-color: white;
-font-size: 60px;
+@keyframes beat {
+    to {
+        transform: scale(1.05);
+    }
 }
+
+.titulo::after {
+    content: '';
+    display: block;
+    height: 10px;
+    background-color: var(--color-blue);
+    transform: scale(0, 1);
+    transition: transform .25s;
+}
+
+.titulo:hover::before {
+    transform: scale(1, 1);
+}
+
+.titulo::before {
+    content: '';
+    display: block;
+    height: 10px;
+    background-color: var(--color-blue);
+    transform: scale(0, 1);
+    transition: transform .25s;
+}
+
+.titulo:hover::after {
+    transform: scale(1, 1);
+}
+
+.contenedor {
+    padding-bottom: 20px;
+}
+
+.uanl {
+    float: left;
+    padding-top: 0;
+    padding-left: 15px;
+    font-family: 'Righteous', cursive;
+    color: var(--color-blue);
+    font-size: 60px;
+}
+
 .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #61A8E3;
+    background-color: white;
     height: 200px;
     height: var(--header-height);
 }
 
-.nav li{
+.nav li {
     float: right;
 }
 
-.nav li a{
+.nav li a {
     display: block;
     text-align: center;
     padding: 16px;
     text-decoration: none;
-    color: white;
+    color: var(--color-blue);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     margin-top: 5px;
 }
+
 header {
     background-color: white;
+    margin-bottom: 5rem;
 }
 
 .google {
