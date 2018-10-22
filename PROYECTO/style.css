@@ -12,56 +12,44 @@
 body {
     background-image: url(img/34.\ Mauve.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.titulo {
-    font-family: 'Righteous', cursive;
-    color: var(--color-blue);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 90px;
-    text-align: center;
-    margin-right: 37%;
-    margin-left: 37%;
-    border-radius: 30px;
+header {
     background-color: white;
-    animation: beat 1s infinite alternate ease-in-out;
-}
-
-@keyframes beat {
-    to {
-        transform: scale(1.05);
-    }
-}
-
-.titulo::after {
-    content: '';
-    display: block;
-    height: 10px;
-    background-color: var(--color-blue);
-    transform: scale(0, 1);
-    transition: transform .25s;
-}
-
-.titulo:hover::before {
-    transform: scale(1, 1);
-}
-
-.titulo::before {
-    content: '';
-    display: block;
-    height: 10px;
-    background-color: var(--color-blue);
-    transform: scale(0, 1);
-    transition: transform .25s;
-}
-
-.titulo:hover::after {
-    transform: scale(1, 1);
+    margin-bottom: 2rem;
 }
 
 .contenedor {
     padding-bottom: 20px;
+    position: relative;
+    display: block;
+   
+}
+
+.welcome{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Righteous';
+    
+
+}
+.clock, .welcomeText{
+    color: #ffff;
+    position: relative;
+    
+}
+
+.welcomeText{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+.clock{
+    font-size: 7em;
+    display: inline-block;
+    margin: 0;
+
 }
 
 .uanl {
@@ -84,7 +72,9 @@ body {
 }
 
 .nav li {
-    float: right;
+   float: right;
+    
+
 }
 
 .nav li a {
@@ -98,16 +88,13 @@ body {
     margin-top: 5px;
 }
 
-header {
-    background-color: white;
-    margin-bottom: 5rem;
-}
 
 .google {
     background-color: white;
     padding: 15px;
     border-radius: 15px;
-    margin-top: 40px;
+    position: absolute;
     margin-right: 20%;
     margin-left: 20%;
+    top: 200px;
 }
