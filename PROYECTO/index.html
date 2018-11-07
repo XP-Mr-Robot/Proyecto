@@ -15,37 +15,64 @@
 <body>
     <header class="header">
         <ul class="nav">
-            <span class="uanl">UANL</span>
-            <li><a href="#"">Iniciar sesion</a></li>
-            <li><a href=" #">Registrarse</a></li>
+            <a href="index.html" class="uanl">UANL</a>
+            <li><a  href="login.html">Iniciar sesion</a></li>
+            <li><a href="#">Registrarse</a></li>
         </ul>
     </header>
-    <main class="contenedor">
+    <video autoplay muted loop class="myVideo" id="myVideo">
+            <source src="rain.mp4" type="video/mp4">
+          </video>
+    <main class="contenedor" id="box">
+           
         <div class="welcome">
             <section id="contWelcome" class="welcomeText"></section>
             <p class="clock" id="pHours"></p>
             <p class="clock">:</p>
             <p class="clock" id="pMinutes"></p>
         </div>
-        <div class="google">
-
+        <div class="google" id= "google">
             <gcse:search class="google"></gcse:search>
-        </div>
 
+        </div>
+        <label class="switch" >
+                <input type="checkbox" id="checkbox" onclick="if(this.checked){check();} else {uncheck();}">
+                <span class="slider round"></span>
+              </label>
+        <!-- Búsqueda Google -->
+
+
+
+
+        <!-- <form method=GET action="http://www.google.com/search"class="search">
+    
+        <input TYPE=text name=q size=31 maxlength=255 value="">
+    
+    
+        <input TYPE=hidden name=hl value=es>
+        
+        
+        <input type=submit name=btnG VALUE="">
+
+</form>
+     -->
+
+
+        <!-- Búsqueda Google -->
     </main>
 
     <!-- Script de Google Custom Search -->
     <script>
-        (function () {
-            var cx = '006408768879381756470:lyztadtkx70';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
+        (function() {
+          var cx = '006408768879381756470:lyztadtkx70';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
         })();
-    </script>
+      </script>
     <script type="text/javascript" src="main.js"></script>
 </body>
 
