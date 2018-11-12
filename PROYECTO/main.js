@@ -39,31 +39,16 @@ function uncheck() {
 
 
 }
-/* Get the documentElement (<html>) to display the page in fullscreen */
-var elem = document.documentElement;
 
-/* View in fullscreen */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
-  }
+function searchON(){
+  document.getElementById("search").style.opacity = 1
+  document.getElementById("search").style.visibility = "visible"
+  document.getElementById("google").style.opacity = 0
+  document.getElementById("google").style.visibility = "hidden"
 }
-
-/* Close fullscreen */
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) { /* Firefox */
-    document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE/Edge */
-    document.msExitFullscreen();
-  }
+function searchOFF(){
+  document.getElementById("search").style.opacity = 0
+  document.getElementById("search").style.visibility = "hidden"
+  document.getElementById("google").style.opacity = 1
+  document.getElementById("google").style.visibility = "visible"
 }

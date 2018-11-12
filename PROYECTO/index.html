@@ -33,31 +33,40 @@
                 <p class="clock" id="pMinutes"></p>
             </div>
         </div>
-        <div class="google" id="google">
-            <gcse:search class="google"></gcse:search>
-
-        </div>
+       
         <label class="switch">
             <input type="checkbox" id="checkbox" onclick="if(this.checked){check();} else {uncheck();}">
             <span class="slider round"></span>
         </label>
+
+        <label  class="switch-2" >
+                
+            <input type="checkbox" id="checkbox" onclick="if(this.checked){searchON();} else {searchOFF();}">
+            <span class="slider round"></span>
+        </label>
+    
+        <div class="google" id="google">
+            <gcse:search class="google"></gcse:search>
+
+        </div>
+
         <!-- Búsqueda Google -->
 
 
 
 
-        <!-- <form method=GET action="http://www.google.com/search"class="search">
-    
-        <input TYPE=text name=q size=31 maxlength=255 value="">
-    
-    
-        <input TYPE=hidden name=hl value=es>
-        
-        
-        <input type=submit name=btnG VALUE="">
+        <form method=GET action="http://www.google.com/search" class="search" id="search">
 
-</form>
-     -->
+            <input TYPE=text placeholder="Busqueda de Google" name=q size=31 maxlength=255 value="">
+
+
+            <input TYPE=hidden name=hl value=es>
+
+
+            <input type=submit name=btnG VALUE="">
+
+        </form>
+
 
 
         <!-- Búsqueda Google -->
