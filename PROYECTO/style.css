@@ -16,30 +16,32 @@ a {
 }
 
 .contenedor {
+    min-height: 100%;
     width: 100%;
     position: relative;
     display: block;
-    top: var(--header-height);
+    top: 8rem;
     z-index: 10;
+    background-image: url(img/34.\ Mauve.png);
+    object-fit: cover;
+    background-size: cover;
 }
 
 .welcome {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    display: grid;
     font-family: 'Righteous';
     top: 3rem;
 }
 
-.clock,
+.contClock,
 .welcomeText {
     color: #ffff;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .welcomeText {
     font-size: 2rem;
-    text-align: center;
 }
 
 .clock {
@@ -52,11 +54,8 @@ a {
     background-color: white;
     padding: 15px;
     border-radius: 15px;
-    position: absolute;
     margin-right: 20%;
     margin-left: 20%;
-    top: 200px;
-    margin-bottom: 20px;
     visibility:visible;
     opacity:1;
     transition:visibility 0.3s linear,opacity 0.3s linear;
@@ -72,7 +71,7 @@ a {
 
 }
 
-.uanl {
+.logo {
     float: left;
     padding-top: 0;
     padding-left: 15px;
@@ -247,8 +246,10 @@ input[type="submit"]:hover {
 
 body {
     background-image: url(img/34.\ Mauve.png);
-    background-size: 170%;
+    object-fit: cover;
+    background-size: cover;
     height: 100%;
     width: 100%;
     min-width: 100vh;
+    margin-bottom: 0;
 }
