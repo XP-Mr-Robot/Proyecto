@@ -52,3 +52,104 @@ function searchOFF(){
   document.getElementById("google").style.opacity = 1
   document.getElementById("google").style.visibility = "visible"
 }
+function notEmpty(){
+	var myText1 = document.getElementById('txf1');
+	var myText2 = document.getElementById('txf2');
+	var myText3 = document.getElementById('txf3');
+	var myText4 = document.getElementById('txf4');
+	var myText5 = document.getElementById('txf5');
+	
+	if(myText1.value != "" && myText2.value != "" && myText3.value != "" && myText4.value != "" && myText5.value != "")
+		document.write("Cópiala y pégala en tu documento.  La ficha bibliográfica es : <br />   " + myText1.value +". (" +   myText2.value   +"). " + myText3.value+ '. ' + myText4.value +": " + myText5.value +".");		 
+	else
+		document.write("Te faltó llenar algun dato." );
+        }
+        
+function notEmpty2(){
+	var myText1 = document.getElementById('txf1');
+	var myText2 = document.getElementById('txf2');
+	var myText3 = document.getElementById('txf3');
+	var myText4 = document.getElementById('txf4');
+	var myText5 = document.getElementById('txf5');
+	var myText6 = document.getElementById('txf6');
+
+	if(myText1.value != "" && myText2.value != "" && myText3.value != "" && myText4.value != "" && myText5.value != ""&& myText6.value != "")
+		document.write("Cópiala y pégala en tu documento.  La ficha bibliográfica es : <br />   " + myText1.value +". (" +   myText2.value   +"). " + myText3.value+ '. ' + myText4.value +", " + myText5.value +", " + myText6.value +". ");		 
+	else
+		document.write("Te faltó llenar algun dato." );
+		}
+
+        function notEmpty3(){
+            var myText1 = document.getElementById('txf1');
+            var myText2 = document.getElementById('txf2');
+            var myText3 = document.getElementById('txf3');
+            var myText4 = document.getElementById('txf4');
+            var myText5 = document.getElementById('txf5');
+            
+            if(myText1.value != "" && myText2.value != "" && myText3.value != "" && myText4.value != "" && myText5.value != "")
+                document.write("Cópiala y pégala en tu documento.  La ficha bibliográfica es : <br />   " + myText1.value +". (" +   myText2.value   +"). " + myText3.value+ '. ' + myText4.value +", " + myText5.value +".");		 
+            else
+                document.write("Te faltó llenar algun dato." );
+                }
+        
+function notEmpty4(){
+	var myText1 = document.getElementById('txf1');
+	var myText2 = document.getElementById('txf2');
+	var myText3 = document.getElementById('txf3');
+	var myText4 = document.getElementById('txf4');
+	var myText5 = document.getElementById('txf5');
+	var myText6 = document.getElementById('txf6');
+	var myText7 = document.getElementById('txf7');
+	var myText8 = document.getElementById('txf8');
+
+	if(myText1.value != "" && myText2.value != "" && myText3.value != "" && myText4.value != "" && myText5.value != ""&& myText6.value != "" && myText7.value != "" && myText8.value != "")
+		document.write("Cópiala y pégala en tu documento.  La ficha bibliográfica es : <br />   " + myText1.value +". " +   myText2.value   +". " + myText3.value+ '. En ' + myText4.value +" (" + myText5.value +", " + myText6.value +") " + myText7.value +": " + myText8.value +". ");		 
+	else
+		document.write("Te faltó llenar algun dato." );
+		}
+
+        function notEmpty5(){
+            var myText1 = document.getElementById('txf1');
+            var myText2 = document.getElementById('txf2');
+            var myText3 = document.getElementById('txf3');
+            var myText4 = document.getElementById('txf4');
+            var myText5 = document.getElementById('txf5');
+            var myText6 = document.getElementById('txf6');
+            var myText7 = document.getElementById('txf7');
+        
+            if(myText1.value != "" && myText2.value != "" && myText3.value != "" && myText4.value != "" && myText5.value != ""&& myText6.value != "" && myText7.value != "")
+                document.write("Cópiala y pégala en tu documento.  La ficha bibliográfica es : <br />   " + myText1.value +". (" +   myText2.value   +"). " + myText3.value+ '. En ' + myText4.value +"(" + myText5.value +"). " + myText6.value +": " + myText7.value +". ");		 
+            else
+                document.write("Te faltó llenar algun dato." );
+                }
+        
+function notEmpty6(){
+	var myText1 = document.getElementById('txf1');
+	var myText2 = document.getElementById('txf2');
+	var myText3 = document.getElementById('txf3');
+	var myText4 = document.getElementById('txf4');
+	var myText5 = document.getElementById('txf5');
+	var myText6 = document.getElementById('txf6');
+
+	if(myText1.value != "" && myText2.value != "" && myText3.value != "" && myText4.value != "" && myText5.value != ""&& myText6.value != "")
+		document.write("Cópiala y pégala en tu documento.  La ficha bibliográfica es : <br />   " + myText1.value +". (" +   myText2.value   +"). " + myText3.value+ '. ' + myText4.value +", de " + myText5.value +" Sitio web: " + myText6.value);		 
+	else
+		document.write("Te faltó llenar algun dato." );
+		}
+
+        function notEmpty7(){
+            var myText1 = document.getElementById('txf1');
+            var myText2 = document.getElementById('txf2');
+            var myText3 = document.getElementById('txf3');
+            var myText4 = document.getElementById('txf4');
+            var myText5 = document.getElementById('txf5');
+            var myText6 = document.getElementById('txf6');
+            var myText7 = document.getElementById('txf7');
+            var myText8 = document.getElementById('txf8');
+        
+            if(myText1.value != "" && myText2.value != "" && myText3.value != "" && myText4.value != "" && myText5.value != ""&& myText6.value != "" && myText7.value != "" && myText8.value != "")
+                document.write("Cópiala y pégala en tu documento.  La ficha bibliográfica es : <br />   " + myText1.value +". (" +   myText2.value   +"). " + myText3.value+ '. ' + myText4.value +", " + myText5.value +", " + myText6.value +". " + myText7.value +", De " + myText8.value +" Base de datos. ");		 
+            else
+                document.write("Te faltó llenar algun dato." );
+                }
+        

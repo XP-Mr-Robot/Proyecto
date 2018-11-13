@@ -253,7 +253,46 @@ input[type="submit"]:hover {
     min-height: 100%;
     transition: opacity 1s;
 }
-
+.apa{
+    display: grid;
+    grid-template-columns:30% 10%;
+    grid-template-rows: repeat(7,50px);
+    grid-gap: 10px;
+    position: relative;
+    top: 90px;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    
+}
+.apa-item{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 10px;
+    
+}
+.apa-button{
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-variant: small-caps;
+    width: 100%;
+    height: 100%;
+    background-color: #6EAFE5;
+    transition: background-color, 1s;
+    text-align: center;
+    line-height: 50px;
+}
+.apa-button:hover{
+    background-color: #2196F3;
+}
+.apa-item:nth-child(even){
+    background-color: #6EAFE5
+}
 body {
     background-image: url(img/34.\ Mauve.png);
     object-fit: cover;
